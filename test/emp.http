@@ -1,0 +1,33 @@
+
+GET http://localhost:4004/odata/v4/employeeservice/Employees HTTP/1.1
+
+###
+
+POST http://localhost:4004/odata/v4/employeeservice/Employees HTTP/1.1
+Content-Type: application/json
+
+   {
+      "id": 7,
+      "name": "chakri",
+      "age": 24,
+      "email": "vanguri@gmail.com",
+      "phone": 6302689942
+    }
+
+###
+
+DELETE http://localhost:4004/odata/v4/employeeservice/Employees(7) HTTP/1.1
+
+###
+
+PUT http://localhost:4004/odata/v4/employeeservice/Employees(1) HTTP/1.1
+Content-Type: application/json
+
+  {
+      "name": "chakri",
+      "age": 29,
+      "email": "vanguri@gmail.com",
+      "phone": 6302689942
+    }
+
+
